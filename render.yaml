@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pr-review-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MicrosoftAppId
+        sync: false
+      - key: MicrosoftAppPassword
+        sync: false
+    plan: free
